@@ -66,8 +66,8 @@ public final class MapboxImageAPI: NSObject {
         }
 
         if let mapboxAccessToken = mapboxAccessToken {
-            eventsManager.isMetricsEnabledInSimulator = true
-            eventsManager.isMetricsEnabledForInUsePermissions = false
+//            eventsManager.isMetricsEnabledInSimulator = true
+//            eventsManager.isMetricsEnabledForInUsePermissions = false
             eventsManager.initialize(withAccessToken: mapboxAccessToken, userAgentBase: "mapbox-scenekit-ios", hostSDKVersion: String(describing: Bundle(for: MapboxImageAPI.self).object(forInfoDictionaryKey: "CFBundleShortVersionString")!))
             eventsManager.disableLocationMetrics()
             eventsManager.sendTurnstileEvent()
